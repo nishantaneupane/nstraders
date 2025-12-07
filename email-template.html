@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New Order Confirmation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #f6f7fb;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+          Arial, sans-serif;
+        color: #111827;
+      }
+      .wrapper {
+        width: 100%;
+        background: #f6f7fb;
+        padding: 24px;
+      }
+      .container {
+        max-width: 640px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+      }
+      .header {
+        background: #111827;
+        color: #ffffff;
+        padding: 20px 24px;
+      }
+      .brand {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+      }
+      .content {
+        padding: 24px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 22px;
+      }
+      p {
+        margin: 0 0 12px;
+        line-height: 1.6;
+      }
+      .summary {
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 16px;
+        margin: 16px 0;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 8px 0;
+      }
+      .label {
+        color: #6b7280;
+      }
+      .value {
+        color: #111827;
+        font-weight: 600;
+      }
+      .divider {
+        height: 1px;
+        background: #e5e7eb;
+        margin: 12px 0;
+      }
+      .footer {
+        padding: 16px 24px 24px;
+        color: #6b7280;
+        font-size: 12px;
+      }
+      .badge {
+        display: inline-block;
+        background: #111827;
+        color: #fff;
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: 999px;
+      }
+      .note {
+        background: #fffbeb;
+        border: 1px solid #f59e0b;
+        color: #92400e;
+        padding: 12px;
+        border-radius: 8px;
+        margin-top: 12px;
+      }
+      @media (max-width: 480px) {
+        .row {
+          flex-direction: column;
+        }
+        .value {
+          margin-top: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="header">
+          <div class="brand">NS Fitness • Secure Order</div>
+        </div>
+        <div class="content">
+          <h1>New Order Received</h1>
+          <p>
+            Hi team, a new order was placed on the site. The details are below.
+          </p>
+
+          <div class="summary">
+            <div class="row">
+              <div class="label">Customer Name</div>
+              <div class="value">{{customer_name}}</div>
+            </div>
+            <div class="row">
+              <div class="label">Customer Email</div>
+              <div class="value">{{customer_email}}</div>
+            </div>
+            <div class="row">
+              <div class="label">Phone</div>
+              <div class="value">{{customer_phone}}</div>
+            </div>
+            <div class="row">
+              <div class="label">Shipping Address</div>
+              <div class="value">{{shipping_address}}</div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="label">Product</div>
+              <div class="value">{{product_name}}</div>
+            </div>
+            <div class="row">
+              <div class="label">Price</div>
+              <div class="value">{{product_price}}</div>
+            </div>
+            <div class="row">
+              <div class="label">Order Date</div>
+              <div class="value">{{order_date}}</div>
+            </div>
+          </div>
+
+          <div class="note">
+            <strong>Order Notes:</strong>
+            <div>{{order_notes}}</div>
+          </div>
+
+          <p style="margin-top: 16px">
+            <span class="badge">Secure Checkout</span>
+            &nbsp; • &nbsp; Fast Delivery &nbsp; • &nbsp; 1-Year Warranty
+          </p>
+        </div>
+        <div class="footer">
+          This automated email was sent via EmailJS from NS Fitness. If you have
+          any questions, reply to this email.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+New Order Received\n\nCustomer Name: {{customer_name}}\nCustomer Email: {{customer_email}}\nPhone: {{customer_phone}}\nShipping Address: {{shipping_address}}\n\nProduct: {{product_name}}\nPrice: {{product_price}}\nOrder Date: {{order_date}}\n\nOrder Notes:\n{{order_notes}}\n\n--\nNS Fitness • Secure Checkout • Fast Delivery • 1-Year Warranty\nSent via EmailJS

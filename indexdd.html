@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WalkPro - Premium Walking Pad for Your Health</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <i class="fas fa-walking"></i>
+            <span>WalkPro</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#checkout" class="btn-primary">Buy Now</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="fade-in">Walk Your Way to Better Health</h1>
+            <p class="fade-in-delay">
+              Experience the perfect blend of fitness and convenience with our
+              foldable electric treadmill. Work, walk, and thrive - all at the
+              same time.
+            </p>
+            <div class="hero-buttons fade-in-delay-2">
+              <a href="#checkout" class="btn-primary btn-large"
+                >Get Yours Now</a
+              >
+              <a href="#features" class="btn-secondary btn-large">Learn More</a>
+            </div>
+            <div class="hero-stats fade-in-delay-3">
+              <div class="stat">
+                <h3>5000+</h3>
+                <p>Happy Customers</p>
+              </div>
+              <div class="stat">
+                <h3>4.9/5</h3>
+                <p>Rating</p>
+              </div>
+              <div class="stat">
+                <h3>1 Year</h3>
+                <p>Warranty</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop"
+                alt="Walking Pad"
+              />
+              <div class="floating-badge">
+                <span class="badge-text">Free Shipping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose WalkPro?</h2>
+          <p>Designed for modern lifestyles, built for lasting results</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Powerful Motor</h3>
+            <p>
+              1.5-2.5 HP peak power motor delivers smooth, quiet performance up
+              to 10 km/h for walking and light jogging.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Smart Control</h3>
+            <p>
+              Remote control and LED display let you adjust speed and track your
+              progress effortlessly.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-volume-mute"></i>
+            </div>
+            <h3>Ultra Quiet</h3>
+            <p>
+              Advanced noise reduction technology keeps operation under 45dB -
+              perfect for home or office.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-compress-arrows-alt"></i>
+            </div>
+            <h3>Space Saving</h3>
+            <p>
+              Compact, foldable design stores easily under desks or in closets.
+              Perfect for small spaces.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Safety First</h3>
+            <p>
+              Anti-slip running surface and emergency stop feature ensure safe
+              workouts every time.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Health Benefits</h3>
+            <p>
+              Burn calories, improve circulation, and boost energy while you
+              work or watch TV.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" class="product-section">
+      <div class="container">
+        <div class="product-showcase">
+          <div class="product-images">
+            <div class="main-image">
+              <img
+                id="mainProductImage"
+                src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop"
+                alt="Walking Pad Main"
+              />
+            </div>
+            <div class="thumbnail-images">
+              <img
+                class="thumbnail active"
+                src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=200&h=150&fit=crop"
+                alt="View 1"
+                onclick="changeImage(this)"
+              />
+              <img
+                class="thumbnail"
+                src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=200&h=150&fit=crop"
+                alt="View 2"
+                onclick="changeImage(this)"
+              />
+              <img
+                class="thumbnail"
+                src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=200&h=150&fit=crop"
+                alt="View 3"
+                onclick="changeImage(this)"
+              />
+              <img
+                class="thumbnail"
+                src="https://images.unsplash.com/photo-1483721310020-03333e577078?w=200&h=150&fit=crop"
+                alt="View 4"
+                onclick="changeImage(this)"
+              />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-badge">Best Seller</div>
+            <h2>CR-A1F Folding Treadmill Machine</h2>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>4.9 (1,234 reviews)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">NPR 18,500</span>
+              <span class="original-price">NPR 25,000</span>
+              <span class="discount">Save NPR 6,500</span>
+            </div>
+            <div class="product-description">
+              <p>
+                Transform your daily routine with the CR-A1F Folding Treadmill
+                Machine. Engineered for comfort, designed for results. Perfect
+                for home and gym use, this portable and foldable electric
+                treadmill seamlessly integrates fitness into your lifestyle.
+              </p>
+            </div>
+            <div class="product-specs">
+              <h4>Specifications:</h4>
+              <ul>
+                <li><i class="fas fa-check"></i> Peak Power: 1.5-2.5 HP</li>
+                <li><i class="fas fa-check"></i> Speed Range: 1-10 km/h</li>
+                <li>
+                  <i class="fas fa-check"></i> Max User Weight: 110 kg (242 lbs)
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Product Size: 122 x 55 x 99 cm
+                </li>
+                <li><i class="fas fa-check"></i> Display Type: LED Screen</li>
+                <li>
+                  <i class="fas fa-check"></i> Features: Portable, Foldable,
+                  Electric
+                </li>
+                <li><i class="fas fa-check"></i> Material: Steel Frame</li>
+                <li><i class="fas fa-check"></i> Brand: CR | Model: CR-A1F</li>
+              </ul>
+            </div>
+            <div class="product-actions">
+              <a href="#checkout" class="btn-primary btn-large btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now - NPR 18,500
+              </a>
+              <div class="product-guarantee">
+                <div class="guarantee-item">
+                  <i class="fas fa-shipping-fast"></i>
+                  <span>Free Shipping</span>
+                </div>
+                <div class="guarantee-item">
+                  <i class="fas fa-undo"></i>
+                  <span>30-Day Returns</span>
+                </div>
+                <div class="guarantee-item">
+                  <i class="fas fa-certificate"></i>
+                  <span>1-Year Warranty</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Customers Say</h2>
+          <p>
+            Join thousands of satisfied customers who transformed their health
+          </p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Kathmandu ko ghar ma ramro fit vayo! I work from home and this
+              has been amazing for my health. Dherai ramro quality and price
+              pani reasonable cha."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=1" alt="Priya Sharma" />
+              <div>
+                <h4>Priya Sharma</h4>
+                <span>Verified Buyer - Kathmandu</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Ekdam shaanta cha! Office ko meeting ma pani chalayera baschu ani
+              kailei problema bhayena. My back pain sabai thik bhayo. Best
+              purchase for home gym!"
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://i.pravatar.cc/100?img=13"
+                alt="Rajesh Adhikari"
+              />
+              <div>
+                <h4>Rajesh Adhikari</h4>
+                <span>Verified Buyer - Lalitpur</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Delivery ramro bhayo and setup pani easy thyo. Ghar ma fitness
+              garnu lai perfect cha! Quality dherai ramro cha. Worth every
+              rupee!"
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=5" alt="Sunita Gurung" />
+              <div>
+                <h4>Sunita Gurung</h4>
+                <span>Verified Buyer - Pokhara</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout" class="checkout-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Complete Your Order</h2>
+          <p>Free shipping • 30-day returns • 1-year warranty</p>
+        </div>
+        <div class="checkout-container">
+          <div class="checkout-form">
+            <form id="orderForm">
+              <h3>Shipping Information</h3>
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address (Optional)</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="+1 (555) 123-4567"
+                />
+              </div>
+              <div class="form-group">
+                <label for="address">Street Address *</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  required
+                  placeholder="123 Main Street"
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">City *</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    required
+                    placeholder="New York"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="state">State/Province *</label>
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    required
+                    placeholder="NY"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="zipcode">Zip/Postal Code *</label>
+                  <input
+                    type="text"
+                    id="zipcode"
+                    name="zipcode"
+                    required
+                    placeholder="10001"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="country">Country *</label>
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    required
+                    placeholder="USA"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="notes">Order Notes (Optional)</label>
+                <textarea
+                  id="notes"
+                  name="notes"
+                  rows="3"
+                  placeholder="Any special instructions?"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn-primary btn-large btn-full"
+                id="submitBtn"
+              >
+                <i class="fas fa-lock"></i> Place Order - NPR 18,500
+              </button>
+              <p class="form-note">
+                By placing this order, you agree to our terms and conditions.
+                You will receive an order confirmation email shortly.
+              </p>
+            </form>
+          </div>
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-item">
+              <img
+                src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=100&h=80&fit=crop"
+                alt="Walking Pad"
+              />
+              <div class="summary-details">
+                <h4>CR-A1F Folding Treadmill</h4>
+                <p>Quantity: 1</p>
+              </div>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span>NPR 18,500</span>
+            </div>
+            <div class="summary-row">
+              <span>Shipping</span>
+              <span class="free">FREE</span>
+            </div>
+            <div class="summary-row discount">
+              <span>Discount</span>
+              <span>-NPR 6,500</span>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <span>NPR 18,500</span>
+            </div>
+            <div class="trust-badges">
+              <div class="trust-badge">
+                <i class="fas fa-lock"></i>
+                <span>Secure Checkout</span>
+              </div>
+              <div class="trust-badge">
+                <i class="fas fa-truck"></i>
+                <span>Fast Delivery</span>
+              </div>
+              <div class="trust-badge">
+                <i class="fas fa-shield-alt"></i>
+                <span>1-Year Warranty</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <i class="fas fa-walking"></i>
+              <span>WalkPro</span>
+            </div>
+            <p>Transform your health, one step at a time.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#product">Product</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Warranty</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+              <li><i class="fas fa-envelope"></i> support@walkpro.com</li>
+              <li><i class="fas fa-phone"></i> 1-800-WALK-PRO</li>
+              <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Ave, NY</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 WalkPro. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content"></div>
+    </div>
+  </body>
+</html>
